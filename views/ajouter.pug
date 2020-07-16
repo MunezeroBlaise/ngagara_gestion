@@ -1,0 +1,32 @@
+extends layout
+block content
+ form(action='/add', method='post' style='margin-left: 30%; margin-right: 30%;')
+  .form-row
+    .form-group.col-md-6
+      label(for='nom') Nom
+      input.form-control#nom(type='text' ,name='nom')
+    .form-group.col-md-6
+      label(for='prenom') prenom
+      input.form-control#inputPassword4(type='text' ,name='prenom')
+  .form-group
+    label(for='telephone') Telephone
+    input.form-control#telephone(type='number' placeholder='+257',name='telephone')
+  .form-group
+    label(for='maison') Type maison
+    input.form-control#maison(type='text' placeholder='type de maison', name='type_maison')
+  .form-row
+    .form-group.col-md-6
+      label(for='datep') Date pay
+      input.form-control#inputdatepCity(type='Date' name='datepay')
+   
+    .form-group.col-md-6
+      label(for='motif') Motif
+      input.form-control#motif(type='area', name='motif')
+  .form-group
+    .form-check
+      input.form-check-input#gridCheck(type='checkbox')
+      label.form-check-label(for='gridCheck').
+        
+        Check me out
+        
+  button.btn.btn-primary.btn-block(type='submit') Sign in

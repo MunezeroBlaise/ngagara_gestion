@@ -1,0 +1,28 @@
+extends index
+block content 
+          .row
+            
+                .col-md-12
+                             table.table.table-striped.table-dark
+
+                                thead
+                                        tr
+                                        th(scope='col') Nom
+                                        th(scope='col') Prenom
+                                        th(scope='col') Télephone
+                                        th(scope='col') Type_Maison
+                                        th(scope='col') Date_de_paiement
+                                        th(scope='col') Motif
+
+                                tbody
+                                    
+                                       each ngagara in ngagaras
+                                          tr
+                                            td=ngagara.nom
+                                            td=ngagara.prenom
+                                            td=ngagara.telephone
+                                            td=ngagara.type_maison
+                                            td=ngagara.datepay
+                                            td=ngagara.motif
+                                        
+                            
